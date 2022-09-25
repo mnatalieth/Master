@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* --NAVBAR (BARRA DE NAVEGACIÓN)-- */
 .header {
   background-color: #0E0E0E;
   position: sticky;
@@ -53,6 +54,7 @@
         border-bottom: transparent solid;
       }
 
+/* --AREA DEL HERO (LANDING PAGE)-- */
 .hero {
   background-color: black;
   display: flex;
@@ -93,3 +95,65 @@
         padding: 0.8rem 2.5rem;
         text-decoration: none;
       }
+
+/* --AREA DE SERVICIO--  */
+.servicios {
+  background-color: #131313;
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+  .servicios_content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .servicios__title {
+    background-color: red;
+    color: white;
+    margin: 2rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .card__content {
+    display: flex;
+  }
+  .card {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 25rem;
+    justify-content: flex-start;
+    margin: 1rem;
+    padding: 1rem;
+    width: 15.625rem;
+  }
+    .card_imagen-1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../img/servicio1.jpg);
+      background-position: center left;
+      background-size: cover;
+    }
+    .card_imagen-2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../img/servicio2.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .card_imagen-3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../img/servicio3.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+    .card__title {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2rem;
+    }
+    .card__descripcion {
+      color: gray;
+      font-size: 1rem;
+    }
+    .card__precio {
+      font-size: 3rem;
+      margin: 3rem 0;
+    }
+    .card_button-transparent {
+      background-color: transparent;
+      border: 0.125rem solid white;
+    }
