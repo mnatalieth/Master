@@ -7,6 +7,7 @@
 .header {
   background-color: #0E0E0E;
   position: sticky;
+  padding: 0 1rem;
   top: 0;
   width: 100%;
 }
@@ -42,12 +43,53 @@
       .navbar__link {
         border-bottom: 0.1875rem solid transparent;
         color: white;
-        text-decoration: none;
         padding: 0.8rem 0.6rem 0.675rem 0.6rem;
+        text-decoration: none;
       }
       .navbar__link:hover {
         border-bottom: white solid;
       }
       .navbar__link_border-inactive:hover {
         border-bottom: transparent solid;
+      }
+
+.hero {
+  background-color: black;
+  display: flex;
+  width: 100%;
+}
+  .hero__content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/hero-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    height: 37.5rem;
+    padding: 0 1rem;
+    padding-top: 12.5rem;
+  }
+    .hero__title {
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 4.625rem;
+      margin: 2rem;
+    }
+    .hero__eslogan {
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .button {
+      background-color: red;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+    }
+      .button__link {
+        color: white;
+        padding: 0.8rem 2.5rem;
+        text-decoration: none;
       }
